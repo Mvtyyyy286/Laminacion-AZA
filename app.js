@@ -33,7 +33,7 @@ const overlay = document.getElementById("overlay");
 
 
 // ================== CARGA DE DATOS ==================
-fetch("data/parametros.json")
+fetch("parametros.json")
   .then(res => res.json())
   .then(datos => {
 
@@ -89,7 +89,7 @@ if(tipo === "de_producto"){
   return resultado;
 }
 
-fetch("data/riesgos.json")
+fetch("riesgos.json")
   .then(res => res.json())
   .then(datos => {
     tareasPorEquipo = agruparPorEquipo(datos);
